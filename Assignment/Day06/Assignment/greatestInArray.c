@@ -2,21 +2,19 @@
 
 #include <stdio.h>
 
-int main(){
+int main() {
+    int arr[] = {4, 5, 7, 3, 6, 7, 2, 6, 9};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int max = arr[0];
+    int i;
 
-    int arr[]={4,5,7,3,6,7,2,6,9};
-
-    int size=sizeof(arr)/sizeof(arr[0]);
-
-    for (int i = 0; i < size; i++) //Iterating through the array
-    {
-        if(arr[i] > arr[0]){  //comparing the values if greater 
-            arr[0]=arr[i];  // if greater , store it in  first position of array
+    for(i = 1; i < size; i++) {
+        if(arr[i] > max) {
+            max = arr[i];
         }
     }
-    printf("%d",arr[0]);
+
+    printf("Greatest number in the array is: %d\n", max);
 
     return 0;
-
-
 }
