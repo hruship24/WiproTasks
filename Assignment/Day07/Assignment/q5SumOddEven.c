@@ -1,3 +1,5 @@
+//Sum of Even and odd values in the array
+
 #include <stdio.h>
 
 void displayOddSum(int sumOdd); //Displays the sum of odd numbers
