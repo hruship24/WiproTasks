@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 // Function to perform selection sort in descending order
 void selectionSort(int arr[], int n)
 {
@@ -25,6 +24,15 @@ void selectionSort(int arr[], int n)
     }
 }
 
+display(int arr[],int n)
+{
+    int i;
+    for (i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+}
+
 int main()
 {
     int n, i;
@@ -39,14 +47,15 @@ int main()
         scanf("%d", &arr[i]);
     }
 
+    //Display the  array before sorting
+    printf("Original array is : ");
+    display(arr, n);
+
     // Sorting the array in descending order
     selectionSort(arr, n);
-
     printf("Elements sorted in descending order: ");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
+
+    display(arr,n);
     printf("\n");
 
     return 0;
