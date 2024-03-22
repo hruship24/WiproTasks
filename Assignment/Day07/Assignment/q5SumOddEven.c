@@ -1,4 +1,4 @@
-//Sum of Even and odd values in the array
+//Q5Sum of Even and odd values in the array
 
 #include <stdio.h>
 
