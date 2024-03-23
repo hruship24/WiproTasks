@@ -1,0 +1,38 @@
+NAME : HRUSHIKESH PAWAR
+
+********* ALGORITHM FOR BINARY SEARCH *******************
+
+STEP 1 : START 
+STEP 2 : INITIALIZE LEFT =0 AND RIGHT = LAST ELEMENT INDEX -1  AND position =-1
+STEP 3 : REPEAT STEP 4 AND 5 WHILE LEFT <= RIGHT
+STEP 4 : SET MID = (LEFT + RIGHT ) / 2
+STEP 5 : IF a[MID] = val
+		set position =val
+		print position
+		goto STEP 7
+	ELSE IF a[MID]>val
+		set RIGHT =MID -1
+	      ELSE 
+		set LEFT= MID +1
+STEP 6 : IF position =-1
+	 print "Value is not found"
+STEP 7 : STOP
+_______________________________________________________
+
+**************** Psuedocode for Binary Search *********************
+
+BEGIN
+function binary_search(ARRAY, VAL)
+    left = 0 , right = length(ARRAY) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if ARRAY[mid] == VAL:
+            return mid
+        elSE if ARRAY[mid] < VAL:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+END
+
+__________________________________________________________

@@ -1,0 +1,25 @@
+NAME : HRUSHIKESH PAWAR
+
+********** Algorithm for Linear Search **************
+
+STEP 1 : START 
+STEP 2 : INITIALIZE i=1
+STEP 3 : IF  i > N , JUMP TO STEP 7
+STEP 4 : IF array[i]=x then jump to step 6
+STEP 5 : SET i to i+1
+STEP 6 : GOTO STEP2
+STEP 7 : PRINT ELEMENT X found at index i and jump to step 8
+STEP 8 : print NOT  FOUND
+step 9 : STOP
+
+_______________________________________________________
+
+******** Psuedocode For Linear Search ***************
+
+BEGIN 
+LOOP for i=0 to arr_len-1 WITH INCREMENT i BY 1
+if (a[i]=number) then 
+print number
+ELSE PRINT NOT FOUND
+EXIT
+________________________________________________________
