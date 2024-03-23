@@ -8,11 +8,12 @@ int main()
     int temp;
 
     int len = sizeof(arr) / sizeof(arr[0]);
-
-    for (int i = 0; i < len-1; i++)
+    int i;
+    for ( i = 0; i < len-1; i++)
     {
         int min=i;
-        for (int j = i + 1; j < len; j++)
+        int j;
+        for ( j = i + 1; j < len; j++)
         {
             if (arr[min] > arr[j])
             {
