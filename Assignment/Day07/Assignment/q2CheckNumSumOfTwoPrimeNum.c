@@ -1,4 +1,4 @@
-/*
+/* 
 Q2. Check whether a given number can be expressed as the sum of two prime number
 
 i/p
