@@ -1,0 +1,85 @@
+Name : Hrushikesh Pawar
+*******************************************
+Assignment 2: Recursive
+Function and Efficiency Analysis - Write a recursive function pseudocode and
+calculate the nth Fibonacci number and use Big O notation to analyze its
+efficiency. Compare this with an iterative approach and discuss the pros and
+cons in terms of space and time complexity.
+__________________________________________________________________
+
+******************* Psuedocode for Recursive Function for nth Fibonacci Number *************************
+BEGIN 
+function fibonacci(n)
+    if n <= 1
+        return n
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    END if
+END function
+END
+
+____________________________________________________________________
+
+******************************* Code to calculate nth Fibonacci Number ********************************
+#include <stdio.h>
+
+// Recursive function to calculate the nth Fibonacci number
+int fibonacci(int n) {
+    if (n <= 1)
+        return n;
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    
+    // Calculate and print the nth Fibonacci number
+    printf("The %dth Fibonacci number is: %d\n", n, fibonacci(n));
+    
+    return 0;
+}
+
+______________________________________________________________________
+
+Efficiency Analysis:
+
+The time complexity of the recursive Fibonacci function here is O(2^n). 
+This is because each call branches into two recursive calls, creating stack frame's stack increases the number of function calls as n increases.
+The space complexity of the recursive Fibonacci function is O(n) due to the function call stack. 
+________________________________________________________________________
+
+Comparison between recursive and Iterative Approach: 
+
+The time complexity of an iterative approach for calculating the nth Fibonacci number is O(n). 
+whereas the time complexity of an recursive approach for calculating the nth Fibonnaci number is O(2^n).
+
+Iterative approach involves iterating through a loop n times to compute the Fibonacci number.
+Recursive approach  involves making (n-1) and (n-2) function calls function multiple times to compute the Fibonacci number.
+
+The space complexity of the iterative approach is O(1). 
+whereas the space complexity of  the recursive approach is O(n).
+
+Iterative approach requires only a constant amount of  space for storing a few variables like the current Fibonacci number, 
+the previous Fibonacci number.
+Recursive approach requires more space  as it needs to store all the intermediate values in the stack frames which results in higher space complexity.
+_________________________________________________________________________
+
+Pros and Cons :
+
+Recursive Approach :
+- Pros : The implementaion of recursive function is very simple.
+         The  code is easy to understand and write.
+- Cons : Takes more memory (due to function calls).
+         Slower execution time 
+         It has high time complexity which makes it inefficient for large input data.
+
+Iterative Approach : 
+- Pros : Efficiently uses memory as it does not use extra space like recursion.
+         The execution time is also Fast.
+- Cons : The implementaion is more complex as compare to recursive approach.
+         
+***********************************************************************************************************************************
+

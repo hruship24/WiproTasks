@@ -1,0 +1,69 @@
+Name : Hrushikesh Pawar
+************************************************
+Assignment 1: Pseudocode and Flowchart for Sorting Algorithm - Write
+pseudocode and create a flowchart for a bubble sort algorithm. Provide a
+brief explanation of how the algorithm works and a simple array of integers
+to demonstrate a dry run of your algorithm.
+
+**************** Psuedocode for Bubble Sort *********************
+
+BEGIN
+
+BubbleSort(array,num) 
+
+    int i, j;
+
+    for (i = 0; i < n-1; i++)
+
+        for (j = 0; j < n-i-1; j++) 
+
+            if (arr[j] > arr[j+1]) 
+
+                arr[j] = arr[j] + arr[j+1];
+                arr[j+1] = arr[j] - arr[j+1];
+                arr[j] = arr[j] - arr[j+1];
+END
+
+_______________________________________________________
+
+Explanation:
+
+Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, 
+compares each pair of adjacent items, and swaps them if they are in the wrong order. 
+This process is repeated for each pair of adjacent elements until the entire list is sorted.
+
+The algorithm works as follows :
+
+Start from the beginning of the array.
+Compare the current element with the next element.
+If the current element is greater than the next element, swap them.
+Move to the next pair of elements and repeat steps 2 and 3.
+Continue this process for each pair of adjacent elements until the entire array is sorted.
+_______________________________________________________
+
+Example:
+Let's demonstrate the bubble sort algorithm with an array of integers: [5, 3, 8, 4, 2]
+
+Iteration 1:
+
+Compare 5 and 3 (5 > 3), swap them: [3, 5, 8, 4, 2]
+Compare 5 and 8 (no swap needed): [3, 5, 8, 4, 2]
+Compare 8 and 4 (8 > 4), swap them: [3, 5, 4, 8, 2]
+Compare 8 and 2 (8 > 2), swap them: [3, 5, 4, 2, 8]
+
+Iteration 2:
+
+Compare 3 and 5 (no swap needed): [3, 5, 4, 2, 8]
+Compare 5 and 4 (5 > 4), swap them: [3, 4, 5, 2, 8]
+Compare 5 and 2 (5 > 2), swap them: [3, 4, 2, 5, 8]
+
+Iteration 3:
+
+Compare 3 and 4 (no swap needed): [3, 4, 2, 5, 8]
+Compare 4 and 2 (4 > 2), swap them: [3, 2, 4, 5, 8]
+
+Iteration 4:
+
+Compare 3 and 2 (3 > 2), swap them: [2, 3, 4, 5, 8]
+ 
+The array is now sorted: [2, 3, 4, 5, 8]
