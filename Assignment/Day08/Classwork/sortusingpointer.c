@@ -1,11 +1,13 @@
+
+// sort the elements of an array in desc order //Bubble sort we are using
 #include <stdio.h>
 
-void sortDescending(int *arr, int size) {
+void sortDesc(int *arr, int size) {
     int *i, *j;
     
     for (i = arr; i < arr + size - 1; i++) {
         for (j = i + 1; j < arr + size; j++) {
-            if (*i < *j) {
+            if (*i < *j) {   //to swap the values 
                 *i = *i + *j;
                 *j = *i - *j;
                 *i = *i - *j;
@@ -15,23 +17,23 @@ void sortDescending(int *arr, int size) {
 }
 
 int main() {
-    int arr[] = {5, 3, 9, 1, 7};
+    int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
     int *ptr = arr; // Pointer to the beginning of the array
     
-    printf("Array before sorting:\n");
+    printf("Before Sorting : ");
     for (int i = 0; i < size; i++) {
         printf("%d ", *(ptr + i));
     }
     printf("\n");
     
-    sortDescending(arr, size);
+    sortDesc(arr, size);
     
-    printf("Array after sorting in descending order:\n");
+    printf("After Sorting : ");
     for (int i = 0; i < size; i++) {
         printf("%d ", *(ptr + i));
     }
-    printf("\n");
+    printf("\n\n");
     
     return 0;
 }
